@@ -3,7 +3,11 @@
     "framework": null,
     "functions": {
         "api/index.php": {
-            "runtime": "vercel-php@0.7.4"
+            "runtime": "vercel-php@0.7.4",
+            "config": {
+                "maxDuration": 10,
+                "phpVersion": "8.3"
+            }
         }
     },
     "routes": [
@@ -15,5 +19,10 @@
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
-    ]
+    ],
+    "build": {
+        "env": {
+            "COMPOSER_NODE_VERSION": "20"
+        }
+    }
 }
