@@ -1,6 +1,8 @@
 {
     "version": 2,
     "framework": null,
+    "cleanUrls": true,
+    "trailingSlash": false,
     "functions": {
         "api/index.php": {
             "runtime": "vercel-php@0.7.4"
